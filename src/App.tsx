@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Heart, Info, BookOpen, MessageCircle, Puzzle, Sun, Users, Menu, X, Star, Sparkles, Instagram, Facebook, Youtube } from "lucide-react";
 import React, { useState, useEffect, ReactNode } from "react";
+import heroImage from "./assets/images/regenerated_image_1781743310131.jpg";
+import storyImage from "./assets/images/regenerated_image_1781744502725.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,7 +93,7 @@ const Hero = () => (
             <div className="absolute -inset-4 bg-gradient-to-tr from-brand-blue via-brand-yellow to-brand-pink rounded-full p-2 shadow-2xl">
               <div className="w-full h-full bg-white rounded-full p-2 overflow-hidden">
                 <img 
-                  src="/src/assets/images/regenerated_image_1781743310131.jpg" 
+                  src={heroImage} 
                   alt="Meu Pequeno Herói" 
                   className="w-full h-full object-cover object-center rounded-full"
                   referrerPolicy="no-referrer"
@@ -232,7 +234,7 @@ const StorySection = () => (
           className="aspect-square rounded-[3.5rem] overflow-hidden bg-white shadow-2xl relative border-4 border-white"
         >
           <img 
-            src="/src/assets/images/regenerated_image_1781744502725.png" 
+            src={storyImage} 
             alt="História do meu pequeno - Autismo" 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
