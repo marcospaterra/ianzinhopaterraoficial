@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-kids: "Fredoka", sans-serif;
+  
+  --color-brand-blue-light: #f0f9ff;
+  --color-brand-blue: #5a8cd7;
+  --color-brand-blue-dark: #2c60ad;
+  --color-brand-yellow: #fef08a;
+  --color-brand-pink: #fbcfe8;
+  --color-brand-mint: #ccfbf1;
+  --color-brand-warm: #fffbeb;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-warm text-slate-900 antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-kids tracking-tight;
+  }
+}
+
+.kid-card {
+  @apply bg-white rounded-[2.5rem] p-8 shadow-sm border-b-4 border-slate-100 hover:border-brand-blue/20 transition-all duration-300;
+}
+
+.blob-button {
+  @apply px-8 py-4 rounded-full font-kids font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg;
+}
+
+.glass-nav {
+  @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm transition-all duration-300;
+}
+
+.mobile-stack {
+  @apply flex flex-col md:flex-row;
+}

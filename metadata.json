@@ -1,0 +1,8 @@
+{
+  "name": "Mundo Azul - Apoio Autismo",
+  "description": "Uma landing page dedicada ao apoio de pessoas com TEA e compartilhamento de vivências.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
