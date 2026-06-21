@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Heart, Info, BookOpen, MessageCircle, Puzzle, Sun, Users, Menu, X, Star, Sparkles, Instagram, Facebook, Youtube } from "lucide-react";
 import React, { useState, useEffect, ReactNode } from "react";
-import heroImage from "./assets/images/regenerated_image_1781743310131.jpg";
-import storyImage from "./assets/images/regenerated_image_1781744502725.png";
+import heroImage from "./assets/images/ian.jpg";
+import storyImage from "./assets/images/ianfone.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
